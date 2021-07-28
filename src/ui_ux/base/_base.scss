@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+
+*,
+*::before,
+*::after {
+  // Remove browser margin and padding
+  margin: 0;
+  padding: 0;
+  // Change the box model so border and paddings are not added to the total width of the box container 
+  box-sizing: border-box;
+}
+
+
+html {
+  // Global definition which defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) { // width < 1200 ?
+    font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) { // width < 900?
+    font-size: 50%; // 1rem = 8px; 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12; 12/16 = 75%
+  }
+}
+
+body {
+  // Set project wide font definition so it gets inherited in all child elements of the page
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: $c-quick-silver;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $c-mantis;
+  color: $c-white;
+}
