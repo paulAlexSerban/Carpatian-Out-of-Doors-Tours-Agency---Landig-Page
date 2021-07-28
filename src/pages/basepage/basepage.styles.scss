@@ -1,0 +1,10 @@
+@import '../../ui_ux/main.scss';
+@import '../../ui_ux/layout/grid/grid';
+
+$moduleName: 'basepage';
+
+.#{$moduleName} {
+  &__base {
+    @include getGrid('basegrid');
+  }
+}
