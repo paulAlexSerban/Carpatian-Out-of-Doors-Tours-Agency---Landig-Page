@@ -1,13 +1,21 @@
 import './header.scss';
 
-class Header {
-  constructor() {
-    this.init()
-  }
+const headerStructure = () => {
+	class Header {
+		constructor(element) {
+			this.element = element;
+			this.init()
+		}
+	
+		init() {
+			console.log("class Header - is loaded", this.element);
+		}
+	}
 
-  init() {
-    console.log('[header.js] loaded');
-  }
+	document.querySelectorAll('[data-js-cmp="header"]').forEach(el => {
+			new Header(el)
+		}
+	)
 }
 
-export default Header;
+export default headerStructure;
