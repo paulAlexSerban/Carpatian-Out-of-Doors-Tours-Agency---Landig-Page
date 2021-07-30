@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "../../abstracts/variables";
 
 $moduleName: 'button';
@@ -10,14 +11,19 @@ $moduleName: 'button';
       text-transform: uppercase;
       text-decoration: none;
       display: inline-block;
-      padding: 1.5rem 4rem;
+      padding: 1.2rem 3rem;
       border-radius: 100px;
       transition: all 0.2s;
-      font-size: $default-font-size;
+      font-size: $mobile-font-size;
       position: relative;
 
       // changes for the <button> element
       border: none;
+
+      @include respond(min-tab-port) {
+        font-size: $default-font-size;
+        padding: 1.5rem 4rem;
+      }
     }
 
     &:hover {
@@ -39,6 +45,7 @@ $moduleName: 'button';
 
     &::after {
       @include absCenter(0, 0, false);
+
       content: '';
       display: inline-block;
       height: 100%;
@@ -59,11 +66,11 @@ $moduleName: 'button';
   }
 
   &--green {
-    background-color: $c-emerald;
+    background-color: $c-slate-blue;
     color: $c-white;
 
     &::after {
-      background-color: $c-emerald;
+      background-color: $c-slate-blue;
     }
   }
 
@@ -76,18 +83,18 @@ $moduleName: 'button';
 
     &:link,
     &:visited {
-      color: $c-mint;
+      color: $c-persian-blue;
       display: inline-block;
       text-decoration: none;
-      border-bottom: 0.1rem solid $c-mint;
+      border-bottom: 0.1rem solid $c-persian-blue;
       font-size: $default-font-size;
       transition: all .5s;
-      padding-top: $gutter-horizontal / 4;
+      padding-top: math.div($gutter-horizontal , 4) ;
       padding-bottom: 0.3rem;
     }
 
     &:hover {
-      background-color: $c-mint;
+      background-color: $c-persian-blue;
       color: $c-white;
       box-shadow: 0 1rem 2rem rgba($c-black, 0.15);
       transform: translateY(-2px);
