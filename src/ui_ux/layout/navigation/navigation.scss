@@ -107,7 +107,7 @@ $moduleName: 'navigation';
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($c-mantis, $c-mint);
+    background-image: radial-gradient($c-violet-blue-crayola, $c-persian-blue);
     z-index: 1000;
     transition: all 0.8s;
 
@@ -162,7 +162,7 @@ $moduleName: 'navigation';
     &:hover,
     &:active {
       background-position: 100%;
-      color: $c-mint;
+      color: $c-persian-blue;
       transform: translateX(1rem);
     }
   }

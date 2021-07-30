@@ -14,7 +14,7 @@ $moduleName: 'button';
       padding: 1.2rem 3rem;
       border-radius: 100px;
       transition: all 0.2s;
-      font-size: $mobile-font-size;
+      font-size: $default-font-size;
       position: relative;
 
       // changes for the <button> element
@@ -89,7 +89,7 @@ $moduleName: 'button';
       border-bottom: 0.1rem solid $c-persian-blue;
       font-size: $default-font-size;
       transition: all .5s;
-      padding-top: math.div($gutter-horizontal , 4) ;
+      padding-top: math.div($gutter-horizontal , 4);
       padding-bottom: 0.3rem;
     }
 

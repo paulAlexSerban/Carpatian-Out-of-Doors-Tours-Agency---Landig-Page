@@ -66,7 +66,7 @@ $moduleName: 'card';
       }
 
       &-1 {
-        background-image: linear-gradient(to right bottom, $c-mantis, $c-mint);
+        background-image: linear-gradient(to right bottom, $c-violet-blue-crayola, $c-persian-blue);
       }
 
       &-2 {
@@ -74,7 +74,7 @@ $moduleName: 'card';
       }
 
       &-3 {
-        background-image: linear-gradient(to right bottom, $c-dodger-blue, $c-majorelle-blue);
+        background-image: linear-gradient(to right bottom, $c-electric-green, $c-medium-spring-green);
       }
     }
   }
@@ -89,7 +89,7 @@ $moduleName: 'card';
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $c-mantis, $c-mint), url('../../../assets/images/nat-5.jpg');
+      background-image: linear-gradient(to right bottom, $c-violet-blue-crayola, $c-persian-blue), url('../../../assets/images/nat-5.jpg');
     }
 
     &--2 {
@@ -97,7 +97,7 @@ $moduleName: 'card';
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $c-dodger-blue, $c-majorelle-blue), url('../../../assets/images/nat-7.jpg');
+      background-image: linear-gradient(to right bottom, $c-electric-green, $c-medium-spring-green), url('../../../assets/images/nat-7.jpg');
     }
   }
 
@@ -120,7 +120,7 @@ $moduleName: 'card';
     box-decoration-break: clone;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, rgba($c-mantis, 0.85), rgba($c-mint, 0.85));
+      background-image: linear-gradient(to right bottom, rgba($c-violet-blue-crayola, 0.85), rgba($c-persian-blue, 0.85));
     }
 
     &--2 {
@@ -128,7 +128,7 @@ $moduleName: 'card';
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, rgba($c-dodger-blue, 0.85), rgba($c-majorelle-blue, 0.85));
+      background-image: linear-gradient(to right bottom, rgba($c-electric-green, 0.85), rgba($c-medium-spring-green, 0.85));
     }
   }
 
