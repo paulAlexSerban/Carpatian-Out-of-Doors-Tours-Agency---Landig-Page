@@ -13,20 +13,19 @@
 
 
 html {
-  // Global definition which defines what 1rem is
-  // font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  font-size: 50%;                   // 1rem = 8px;  8/16 = 50%
 
-  // @include respond(tab-land) { // width < 1200 ?
-  //   font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
-  // }
+  @include respond(min-tab-port) {
+    font-size: 56.25%;              // 1rem = 9px;  9/16 = 56.25%
+  }
 
-  // @include respond(tab-port) { // width < 900?
-  //   font-size: 50%; // 1rem = 8px; 8/16 = 50%
-  // }
+  @include respond(min-desktop) {
+    font-size: 62.5%;               // 1rem = 10px; 10/16 = 62.5%
+  }
 
-  // @include respond(big-desktop) {
-  //   font-size: 75%; // 1rem = 12; 12/16 = 75%
-  // }
+  @include respond(min-desk-L) {
+    font-size: 75%;                 // 1rem = 12px; 12/16 = 75%
+  }
 }
 
 body {
@@ -35,14 +34,18 @@ body {
   font-weight: 400;
   line-height: 1.7rem;
   color: $c-quick-silver;
-  padding: 3rem;
+  padding: 0.5rem;
 
-  // @include respond(tab-port) {
-  //   padding: 0;
-  // }
+  @include respond(min-tab-port) {
+    padding: 1.5rem;
+  }
+
+  @include respond(min-desktop) {
+    padding: 3rem;
+  }
 }
 
 // ::selection {
-//   background-color: $c-mantis;
+//   background-color: $c-violet-blue-crayola;
 //   color: $c-white;
 // }
