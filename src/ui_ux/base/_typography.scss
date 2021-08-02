@@ -61,41 +61,38 @@
     }
   }
 
-  // &-secondary {
-  //   font-size: $default-font-size * 2.2;
-  //   line-height: 4rem;
-  //   text-transform: uppercase;
-  //   font-weight: 700;
-  //   display: inline-block;
-  //   background-image: linear-gradient(to right, $c-primary-2, $c-primary-4);
-  //   color: transparent;
-  //   -webkit-background-clip: text;
+  &-secondary {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $c-primary-2, $c-primary-4);
+    color: transparent;
+    -webkit-background-clip: text;
 
-  //   @include respond(tab-port) {
-  //     font-size: 2.5rem;
-  //   }
+    @include respond(min-tab-port) {
+      font-size: 2.5rem;
+    }
 
-  //   @include respond(phone) {
-  //     font-size: 2rem;
-  //   }
-  // }
+    @include respond(min-desktop) {
+      font-size: $default-font-size * 2.2;
+    }
+  }
   
-  // &-tertiary {
-  //   text-transform: uppercase;
-  //   font-weight: 700;
-  //   color: $c-davys-grey;
-  // }
+  &-tertiary {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $c-davys-grey;
+    font-size: 1.5rem;
+  }
 }
 
-// .paragraph {
-//   color: $c-davys-grey;
-//   font-size: 1.6rem;
+.paragraph {
+  color: $c-davys-grey;
+  font-size: 1.6rem;
 
-//   @include respond(tab-port) {
-//     font-size: 1.4rem;
-//   }
-
-//   &:not(:last-child) {
-//     margin-bottom: 3rem;
-//   }
-// }
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

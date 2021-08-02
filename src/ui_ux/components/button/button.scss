@@ -90,7 +90,7 @@ $moduleName: 'button';
       font-size: $default-font-size;
       transition: all .5s;
       padding-top: math.div($gutter-horizontal , 4);
-      padding-bottom: 0.3rem;
+      padding: 0.6rem;
     }
 
     &:hover {

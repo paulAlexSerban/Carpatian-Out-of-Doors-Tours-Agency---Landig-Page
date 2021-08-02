@@ -2,7 +2,10 @@
 @import '../../ui_ux/layout/grid/grid';
 
 // NON JS Components
+@import '../../ui_ux/layout/main/main.scss';
 @import '../../ui_ux/components/button/button.scss';
+@import '../../ui_ux/components/composition/composition.scss';
+@import '../../ui_ux/components/feature-box/feature-box.scss';
 
 $moduleName: 'basepage';
 

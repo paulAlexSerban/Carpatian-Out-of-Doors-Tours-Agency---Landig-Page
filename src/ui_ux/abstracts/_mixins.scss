@@ -1,8 +1,17 @@
 @mixin clearfix {
-  &::after {
-    content: '';
+  zoom: 1;
+  clear: both;
+
+  &:after,
+  &:before {
+    height: 0;
+    content: ' ';
+    display: block;
+    overflow: hidden;
+  }
+
+  &:after {
     clear: both;
-    display: table;
   }
 }
 
@@ -16,34 +25,33 @@
   }
 }
 
+$mobile : 0;
+$tablet: 426px;
+$desktop: 993px;
+$desktop-lg: 1201px;
+
 @mixin respond($breakpoint) {
   @if $breakpoint == min-phone {
     // styles needed foe anything bigger than phone
-    @media only screen and (min-width: 425px) {
+    @media only screen and (min-width: $mobile) {
       @content;
     }
   }
   @if $breakpoint == min-tab-port {
     // styles needed for anything bigger than tablet
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       @content;
     }
   }
   @if $breakpoint == min-desktop {
     // styles needed for anything bigger than desktop
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: $desktop) {
       @content;
     }
   }
   @if $breakpoint == min-desk-L {
      // styles needed for anything bigger than L desktop
-    @media only screen and (min-width: 1200px) {
-      @content;
-    }
-  }
-  @if $breakpoint == min-desk-XL{
-    // styles needed for anything bigger than XL desktop
-    @media only screen and (min-width: 1800px) {
+    @media only screen and (min-width: $desktop-lg) {
       @content;
     }
   }

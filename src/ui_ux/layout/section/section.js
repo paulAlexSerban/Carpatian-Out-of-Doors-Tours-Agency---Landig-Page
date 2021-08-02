@@ -1,14 +1,22 @@
 import './section.scss';
 
-class Section {
-  constructor() {
-    this.init()
-  }
 
-  init() {
-    console.log('[section.js] loaded');
+const sectionStructure = () => {
+	class Section {
+		constructor(element) {
+			this.element = element;
+			this.init()
+		}
+	
+		init() {
+			console.log("class section - is loaded", this.element);
+		}
+	}
 
-  }
+	document.querySelectorAll('[data-js-cmp="section"]').forEach(el => {
+			new Section(el)
+		}
+	)
 }
 
-export default Section;
+export default sectionStructure;
