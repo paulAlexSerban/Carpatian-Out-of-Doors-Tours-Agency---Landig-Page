@@ -1,8 +1,9 @@
 # Carpathian-Out-of-Doors-Tours-Agency---Landing-Page
 
-* Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called "Carpathian Out-of-Doors"
+* Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called "Outdoorsy"
 
 ## Used Front-end Concepts
+* Float Grid Layout implemented for cross-browser compatibility 
 * Object Oriented Programming in JavaScript
 * Component-based development
 * '7-1 Sass Architecture' folder structure adapted as per project requirements
@@ -11,9 +12,9 @@
 
 ## Closely followed the pillars of GOOD HTML and CSS
 ### Responsive design
-* Fluid layouts
-* Media queries
-* Responsive images
+* Fluid grids and layouts - to allow content to easily adapt to the current viewport width used to browse the website
+* Media queries - to change styles on certain viewport widths (breakpoints), allowing us to create different version of our website for different widths
+* Responsive/Flexible images - images behave differently than text content, and so we need to ensure that they also adapt nicely to th current viewport
 * Correct units
 * Mobile-first VS Desktop-first
 * Progressive enhancement VS Graceful degradation

@@ -34,18 +34,14 @@ body {
   font-weight: 400;
   line-height: 1.7rem;
   color: $c-quick-silver;
-  padding: 0.5rem;
-
-  @include respond(min-tab-port) {
-    padding: 1.5rem;
-  }
+  padding: $basesize * 2;
 
   @include respond(min-desktop) {
-    padding: 3rem;
+    padding: $basesize * 4;
   }
 }
 
 // ::selection {
-//   background-color: $c-violet-blue-crayola;
+//   background-color: $c-primary-2;
 //   color: $c-white;
 // }

@@ -8,6 +8,5 @@ $moduleName: 'basepage';
 
 .#{$moduleName} {
   &__base {
-    @include getGrid('basegrid');
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "Carpathian-Out-of-Doors",
   "version": "1.0.0",
-  "description": "Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called 'Carpathian Out-of-Doors'",
+  "description": "Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called 'Outdoorsy'",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

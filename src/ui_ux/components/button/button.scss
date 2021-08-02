@@ -66,11 +66,11 @@ $moduleName: 'button';
   }
 
   &--green {
-    background-color: $c-slate-blue;
+    background-color: $c-primary-3;
     color: $c-white;
 
     &::after {
-      background-color: $c-slate-blue;
+      background-color: $c-primary-3;
     }
   }
 
@@ -83,10 +83,10 @@ $moduleName: 'button';
 
     &:link,
     &:visited {
-      color: $c-persian-blue;
+      color: $c-primary-4;
       display: inline-block;
       text-decoration: none;
-      border-bottom: 0.1rem solid $c-persian-blue;
+      border-bottom: 0.1rem solid $c-primary-4;
       font-size: $default-font-size;
       transition: all .5s;
       padding-top: math.div($gutter-horizontal , 4);
@@ -94,7 +94,7 @@ $moduleName: 'button';
     }
 
     &:hover {
-      background-color: $c-persian-blue;
+      background-color: $c-primary-4;
       color: $c-white;
       box-shadow: 0 1rem 2rem rgba($c-black, 0.15);
       transform: translateY(-2px);
