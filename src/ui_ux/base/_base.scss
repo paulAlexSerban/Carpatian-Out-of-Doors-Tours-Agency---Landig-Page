@@ -41,7 +41,7 @@ body {
   }
 }
 
-// ::selection {
-//   background-color: $c-primary-2;
-//   color: $c-white;
-// }
+::selection {
+  background-color: $c-primary-2;
+  color: $c-white;
+}

@@ -1,6 +1,6 @@
-# Outdoorsy-Tours-Agency---Landing-Page
+# Natours-Tours-Agency---Landing-Page
 
-* Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called "Outdoorsy"
+* Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called "Natours"
 
 ## Used Front-end Concepts
 * Float Grid Layout implemented for cross-browser compatibility 
@@ -18,6 +18,29 @@
 * Correct units
 * Mobile-first VS Desktop-first
 * Progressive enhancement VS Graceful degradation
+
+#### Mobile-First PROS & CONS
+##### PROS
+* 100% optimized for mobile experience;
+* reduces websites and aps to the absolute essentials;
+* results in smaller, faster and more efficient products;
+* prioritizes content over aesthetic design, which may be desirable;
+
+##### CONS
+* the desktop version might feel overly empty and simplistic;
+* more difficult and counterintuitive to develop;
+* less creative freedom, making it more difficult to create distinctive products;
+* clients are used to see a desktop version of the sire as a prototype;
+* do our users even use the mobile internet? what is the purpose se of the website?
+
+#### Responsive / Flexible images
+> the goal of responsive images is to serve **right image** to the **right screen size** and device, in order o avoid downloading unnecessary large images on smaller screens
+
+##### When to use Responsive images
+* Resolution switching - decrease image resolution on smaller screens;
+* Density switching - half the image resolution on `@1x` screen (low res) and full image resolution `@2x` screen (high res);
+* Art direction - different image on smaller screen - in this case you only want to show specific details of the image without (cropping the image in pre-production stages);
+
 ### Maintainable and scalable code
 * Clean
 * Easy-to-understand and modular

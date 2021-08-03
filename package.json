@@ -1,7 +1,7 @@
 {
-  "name": "outdoorsy",
+  "name": "Natours",
   "version": "1.0.0",
-  "description": "Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called 'Outdoorsy'",
+  "description": "Landing page for a fictional business that offers green outdoor tours in the Carpathian mountains called 'Natours'",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

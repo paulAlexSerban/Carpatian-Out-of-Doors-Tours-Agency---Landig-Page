@@ -1,17 +1,8 @@
 @mixin clearfix {
-  zoom: 1;
-  clear: both;
-
-  &:after,
-  &:before {
-    height: 0;
-    content: ' ';
-    display: block;
-    overflow: hidden;
-  }
-
-  &:after {
+  &::after {
+    content: '';
     clear: both;
+    display: table;
   }
 }
 
@@ -31,9 +22,10 @@ $desktop: 993px;
 $desktop-lg: 1201px;
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == min-phone {
+  @if $breakpoint == touch-phone-only {
     // styles needed foe anything bigger than phone
-    @media only screen and (min-width: $mobile) {
+    @media only screen and (max-width: $mobile),
+          only screen and (hover: none) {
       @content;
     }
   }

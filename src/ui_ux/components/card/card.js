@@ -1,13 +1,21 @@
 import './card.scss';
 
-class Card {
-  constructor() {
-    this.init()
-  }
+const cardComponent = () => {
+	class Card {
+		constructor(element) {
+			this.element = element;
+			this.init()
+		}
+	
+		init() {
+			console.log("class Header - is loaded", this.element);
+		}
+	}
 
-  init() {
-    console.log('[card.js] loaded');
-  }
+	document.querySelectorAll('[data-js-cmp="header"]').forEach(el => {
+			new Card(el)
+		}
+	)
 }
 
-export default Card;
+export default cardComponent;

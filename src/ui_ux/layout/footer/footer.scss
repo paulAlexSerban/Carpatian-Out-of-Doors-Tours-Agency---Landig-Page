@@ -5,20 +5,20 @@ $moduleName: 'footer';
 .#{$moduleName} {
   &__base {
     background-color: $c-davys-grey;
-    padding: 10rem 0;
+    padding: 8rem 0;
     font-size: 1.4rem;
 
-    @include respond(tab-port) {
-      padding: 8rem 0;
+    @include respond(min-tab-port) {
+      padding: 10rem 2rem;
     }
   }
 
   &__logo-box {
     text-align: center;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 
-    @include respond(tab-port) {
-      margin-bottom: 6rem;
+    @include respond(min-tab-port) {
+      margin-bottom: 8rem;
     }
   }
 
@@ -31,11 +31,8 @@ $moduleName: 'footer';
     border-top: 1px solid $c-lightgrey;
     padding-top: 2rem;
     display: inline-block;
-
-    @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
-    }
+    width: 100%;
+    text-align: center;
   }
 
   &__list {
@@ -74,12 +71,11 @@ $moduleName: 'footer';
     color: rgba($c-lightgrey, 0.5);
     border-top: 1px solid $c-lightgrey;
     padding-top: 2rem;
-    width: 80%;
-    float: right;
+    width: 100%;
+    text-align: center;
 
-    @include respond(tab-port) {
-      width: 100%;
-      float: none;
+    span {
+      display: block;
     }
   }
 }

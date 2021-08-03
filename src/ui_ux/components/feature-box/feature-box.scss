@@ -12,7 +12,6 @@ $moduleName: 'feature-box';
     box-shadow: 0 1.5rem 4rem rgba($c-black, 0.15);
     transition: all 0.3s;
     
-
     &:hover {
       transform: translateY(-1.5rem) scale(1.03);
     }
@@ -30,6 +29,7 @@ $moduleName: 'feature-box';
     background-image: linear-gradient(to right, $c-primary-2, $c-primary-4);
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 
     @include respond(min-tab-port) {
       margin-bottom: 3.5rem;

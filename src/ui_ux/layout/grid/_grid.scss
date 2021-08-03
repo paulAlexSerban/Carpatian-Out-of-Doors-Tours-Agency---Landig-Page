@@ -7,6 +7,7 @@
     padding: 0;
     max-width: 100%;
     margin: 0 auto;
+    width: 100%;
 
     @include respond(min-tab-port) {
       max-width: $grid-width; // 1440px
@@ -25,7 +26,7 @@
     .col {
       &-1-of-2 {
         // half of width minus the gutter
-        width: calc(((100% - #{$gutter-horizontal}) / 2));
+        width: calc((100% - #{$gutter-horizontal}) / 2);
       }
 
       &-1-of-3 {
@@ -51,18 +52,18 @@
       }
     }
   }
+}
 
-  [class^="col-"] {
-    // select all elements for which the class starts with 'col''
-    // NOTE - the 'col-' class needs to be the first in the class list
-    float: left;
+[class^="col-"] {
+  // select all elements for which the class starts with 'col''
+  // NOTE - the 'col-' class needs to be the first in the class list
+  float: left;
 
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
 
-    @include respond(tab-port) {
-      width: 100% !important;
-    }
+  @include respond(touch-phone-only) {
+    width: 100% !important;
   }
 }
