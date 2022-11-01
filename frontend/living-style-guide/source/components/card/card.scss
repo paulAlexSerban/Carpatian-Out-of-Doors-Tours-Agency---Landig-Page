@@ -1,6 +1,6 @@
 @import "../../abstracts/variables";
 
-$moduleName: 'card';
+$moduleName: "card";
 
 .#{$moduleName} {
   &__base {
@@ -14,7 +14,7 @@ $moduleName: 'card';
       height: auto;
       border-radius: 3px;
       background-color: $c-white;
-      box-shadow: 0 1.5rem 4rem rgba($c-black, .15);
+      box-shadow: 0 1.5rem 4rem rgba($c-black, 0.15);
     }
 
     &:hover .#{$moduleName}__side--front {
@@ -28,8 +28,6 @@ $moduleName: 'card';
     &:hover .#{$moduleName}__side--back {
       transform: rotateY(0deg);
     }
-
-
   }
 
   &__side {
@@ -41,7 +39,7 @@ $moduleName: 'card';
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($c-black, .15);
+    box-shadow: 0 1.5rem 4rem rgba($c-black, 0.15);
 
     @include respond(touch-phone-only) {
       height: auto;
@@ -85,15 +83,18 @@ $moduleName: 'card';
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $c-primary-2, $c-primary-4), url('../../../assets/images/nat-5.jpg');
+      background-image: linear-gradient(to right bottom, $c-primary-2, $c-primary-4),
+        url("../../assets/images/nat-5-original.webp");
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $c-selective-yellow, $c-orange-crayola), url('../../../assets/images/nat-6.jpg');
+      background-image: linear-gradient(to right bottom, $c-selective-yellow, $c-orange-crayola),
+        url("../../assets/images/nat-6-original.webp");
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $c-electric-green, $c-medium-spring-green), url('../../../assets/images/nat-7.jpg');
+      background-image: linear-gradient(to right bottom, $c-electric-green, $c-medium-spring-green),
+        url("../../assets/images/nat-7-original.webp");
     }
   }
 
@@ -120,11 +121,19 @@ $moduleName: 'card';
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, rgba($c-selective-yellow, 0.85), rgba($c-orange-crayola, 0.85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($c-selective-yellow, 0.85),
+        rgba($c-orange-crayola, 0.85)
+      );
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, rgba($c-electric-green, 0.85), rgba($c-medium-spring-green, 0.85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($c-electric-green, 0.85),
+        rgba($c-medium-spring-green, 0.85)
+      );
     }
   }
 

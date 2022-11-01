@@ -1,6 +1,6 @@
-@import '../../abstracts/variables';
+@import "../../abstracts/variables";
 
-$moduleName: 'section';
+$moduleName: "section";
 
 .#{$moduleName} {
   &__base {
@@ -28,12 +28,11 @@ $moduleName: 'section';
     &--features {
       padding-top: 15rem;
       padding-bottom: 15rem;
-      background-image: 
-      linear-gradient(to right bottom, rgba($c-primary-2, 0.8), rgba($c-primary-4, 0.8)), 
-      url('../../../assets/images/nat-4.jpg');
+      background-image: linear-gradient(to right bottom, rgba($c-primary-2, 0.8), rgba($c-primary-4, 0.8)),
+        url("../../assets/images/nat-4-original.webp");
       background-size: cover;
       transform: skewY(-7deg);
-      margin-top:-10rem;
+      margin-top: -10rem;
       background-color: $c-cultured;
 
       & > * {
@@ -59,7 +58,7 @@ $moduleName: 'section';
     &--stories {
       padding: 10rem 0;
       position: relative;
-      
+
       @include respond(min-tab-port) {
         padding: 15rem 0;
       }
