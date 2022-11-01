@@ -15,7 +15,7 @@
 
     &:not(:last-child) {
       // select everything except the last child
-      margin-bottom: math.div($gutter-vertical , 2);
+      margin-bottom: ($gutter-vertical / 2);
 
       @include respond(min-tab-port) {
         margin-bottom: $gutter-vertical;

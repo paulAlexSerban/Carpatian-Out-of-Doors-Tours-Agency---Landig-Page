@@ -1,12 +1,9 @@
-import './basepage.styles.scss';
-import '../../assets/fonts/styles.css';
-
 // JS LAYOUT / STRUCTURE
-import headerStructure from 'layout/header/header';
-import sectionStructure from 'layout/section/section';
-import navigationStructure from 'layout/navigation/navigation';
-import cardComponent from 'components/card/card';
-import bookingComponent from 'components/booking/booking';
+import headerStructure from './layout/header/header';
+import sectionStructure from './layout/section/section';
+import navigationStructure from './layout/navigation/navigation';
+import cardComponent from './components/card/card';
+import bookingComponent from './components/booking/booking';
 new headerStructure;
 new sectionStructure;
 new cardComponent;
