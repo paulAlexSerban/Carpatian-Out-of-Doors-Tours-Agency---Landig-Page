@@ -10,6 +10,7 @@ if [ -d ../public ]; then
   rm -rfv ../src/public
   mkdir ../src/public
 fi
+mkdir ../src/public
 
 cp -rfv ../../../assets/dist/* ../src/public
 npm --prefix .. run build

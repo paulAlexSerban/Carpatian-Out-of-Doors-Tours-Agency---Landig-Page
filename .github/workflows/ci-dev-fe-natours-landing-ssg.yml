@@ -66,8 +66,7 @@ jobs:
       - name: "🏗️  Build Frontend Landing Website For GitHub Pages"
         if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
-          bash scripts/modulize.bash -e gh_pages -p build -m assets
-          bash scripts/modulize.bash -e gh_pages -p build -m landing-ssg
+          bash scripts/modulize.bash -e gh_pages -p build
 
       - name: "🚚  Package Frontend Landing Website"
         if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
