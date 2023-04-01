@@ -15,7 +15,7 @@ on:
 
 jobs:
   build-frontend:
-    name: Build Frontend NextJS SSG Portfolio Website
+    name: Build Frontend Natours SSG Portfolio Website
     runs-on: ubuntu-latest
     env:
       ASSETS_ROOT: assets
