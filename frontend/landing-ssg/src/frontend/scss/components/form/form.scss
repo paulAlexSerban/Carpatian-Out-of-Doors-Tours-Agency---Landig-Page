@@ -24,7 +24,7 @@ $moduleName: 'form';
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($c-black, 0.1);
-      border-bottom: 3px solid $c-primary-4;
+      border-bottom: 3px solid $c-primary-3;
 
       &:invalid {
         border-bottom: 3px solid $c-orange-crayola;
@@ -84,7 +84,7 @@ $moduleName: 'form';
     @include absCenter(0, 1.5rem, false);
     height: 3rem;
     width: 3rem;
-    border: 5px solid $c-primary-2;
+    border: 5px solid $c-primary-1;
     border-radius: 50%;
     display: inline-block;
 
@@ -95,7 +95,7 @@ $moduleName: 'form';
       height: 1.3rem;
       width: 1.3rem;
       border-radius: 50%;
-      background-color: $c-primary-2;
+      background-color: $c-primary-1;
       opacity: 0;
       transition: opacity 0.2s;
     }

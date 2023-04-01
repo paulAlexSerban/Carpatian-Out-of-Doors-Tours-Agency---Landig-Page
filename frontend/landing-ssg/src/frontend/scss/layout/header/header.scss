@@ -7,7 +7,7 @@ $moduleName: 'header';
     position: relative;
     height: 55vh;
     background-image:
-        linear-gradient(to right bottom, rgba($c-primary-2, 0.8), rgba($c-primary-4, 0.8)),
+        linear-gradient(to right bottom, rgba($c-primary-1, 0.8), rgba($c-primary-3, 0.8)),
         url('../../../public/images/hero-small-original.webp');
     background-size: cover;
     background-position: top;
@@ -29,7 +29,7 @@ $moduleName: 'header';
       only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), // this is needed for Safari support
       only screen and (min-width: 125em) { // 600px/16 = 37.5em && 2000px/16 = 125em
       background-image:
-      linear-gradient(to right bottom, rgba($c-primary-2, 0.8), rgba($c-primary-4, 0.8)),
+      linear-gradient(to right bottom, rgba($c-primary-1, 0.8), rgba($c-primary-3, 0.8)),
       url('../../../public/images/hero-original.webp');
     }
   }

@@ -64,10 +64,10 @@ $moduleName: 'composition';
       transform: scale(1.25) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem 0 rgba($c-black, 0.5);
       z-index: 20;
-      outline: .5rem solid $c-primary-2;
+      outline: .5rem solid $c-primary-1;
 
       @include respond(min-tab-port) {
-        outline: 1.5rem solid $c-primary-2;
+        outline: 1.5rem solid $c-primary-1;
         transform: scale(1.05) translateY(-.5rem);
       }
     }

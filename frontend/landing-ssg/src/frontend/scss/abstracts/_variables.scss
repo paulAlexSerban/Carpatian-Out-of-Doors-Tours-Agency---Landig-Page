@@ -5,9 +5,14 @@
 $c-white:                         #ffffff;
 $c-cultured:                      #eeeeee;
 $c-lightgrey:                     #d2d7d3;
+$c-light-grey-1:                  #f7f7f7;
+$c-light-grey-2:                  #eee;
 $c-mid-grey:                      #5e5e5e;
-$c-dark-grey:                     #464646;
+$c-dark-grey:                     #777;
+$c-dark-grey-2:                   #999;
+$c-dark-grey-3:                   #333;
 $c-black:                         #000000;
+
 $c-pumice:                        $c-cultured;
 $c-quick-silver:                  $c-mid-grey;
 $c-davys-grey:                    $c-dark-grey;
@@ -18,18 +23,25 @@ $c-violet-blue-crayola:           #6f76d5;
 $c-slate-blue:                    #555cc5;
 $c-persian-blue:                  #2838b4;
 
+//colors
+$c-emerald:                       #55c57a;
+$c-mantis:                        #7ed56f;
+$c-mint:                          #28b485;
+
 // primary color gradient
-$c-primary:                     $c-blue;
-$c-primary-1:                   color.adjust($c-primary, $red: 140, $green: 123);             // #8c8cff;
-$c-primary-2:                   color.adjust($c-primary, $red: 111, $green: 101, $blue: -42); // $c-violet-blue-crayola: #6f76d5; ex. $c-mantis
-$c-primary-3:                   color.adjust($c-primary, $red: 85, $green: 75, $blue: -58);   // $c-slate-blue: #555cc5; ex. $c-emerald
-$c-primary-4:                   color.adjust($c-primary, $red: 40, $green: 39, $blue: -75);   // $c-persian-blue: #2838b4; // ex. $c-mint
-// second color gradient
-$c-selective-yellow:            #ffb900;
-$c-orange-crayola:              #ff7730;
+$c-primary:                       $c-emerald;
+$c-primary-1:                     $c-mantis;
+$c-primary-2:                     $c-emerald; 
+$c-primary-3:                     $c-mint;
+
+$c-selective-yellow:             #ffb900;
+$c-orange-crayola:               #ff7730;
 // tertiary color gradient
-$c-electric-green:              #29ff30; // ex. $c-dodger-blue
-$c-medium-spring-green:         #43fa95; // ex. $c-majorelle-blue
+$color-tertiary-light:           #43bcd4;//#9699b6
+$color-tertiary-dark:            #4b7bac;//#636681;
+
+$c-electric-green:               #29ff30; // ex. $c-dodger-blue
+$c-medium-spring-green:          #43fa95; // ex. $c-majorelle-blue
 
 // viewport
 $v-mobile-L: 42.5rem;           // 425px

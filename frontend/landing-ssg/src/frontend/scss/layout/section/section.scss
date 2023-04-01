@@ -28,7 +28,7 @@ $moduleName: "section";
     &--features {
       padding-top: 15rem;
       padding-bottom: 15rem;
-      background-image: linear-gradient(to right bottom, rgba($c-primary-2, 0.8), rgba($c-primary-4, 0.8)),
+      background-image: linear-gradient(to right bottom, rgba($c-primary-1, 0.8), rgba($c-primary-3, 0.8)),
         url("../../../public/images/nat-4-original.webp");
       background-size: cover;
       transform: skewY(-7deg);
@@ -66,7 +66,7 @@ $moduleName: "section";
 
     &--bookings {
       padding: 15rem 0;
-      background-image: linear-gradient(to right bottom, $c-primary-2, $c-primary-4);
+      background-image: linear-gradient(to right bottom, $c-primary-1, $c-primary-3);
     }
   }
 }

@@ -107,7 +107,7 @@ $moduleName: 'navigation';
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($c-primary-2, $c-primary-4);
+    background-image: radial-gradient($c-primary-1, $c-primary-3);
     z-index: 1000;
     transition: all 0.8s;
 
@@ -138,6 +138,7 @@ $moduleName: 'navigation';
     @include absCenter;
     list-style: none;
     text-align: center;
+    width: 100%;
   }
 
   &__item {
@@ -149,6 +150,7 @@ $moduleName: 'navigation';
     &:visited {
       display: inline-block;
       font-size: 3rem;
+      line-height: 2.8rem;
       font-weight: 300;
       color: $c-white;
       padding: 2rem 1.5rem;
@@ -162,7 +164,7 @@ $moduleName: 'navigation';
     &:hover,
     &:active {
       background-position: 100%;
-      color: $c-primary-4;
+      color: $c-primary-3;
       transform: translateX(1rem);
     }
   }

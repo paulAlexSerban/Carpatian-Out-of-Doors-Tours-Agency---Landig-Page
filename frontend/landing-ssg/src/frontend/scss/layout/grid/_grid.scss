@@ -15,7 +15,7 @@
 
     &:not(:last-child) {
       // select everything except the last child
-      margin-bottom: ($gutter-vertical / 2);
+      margin-bottom: math.div($gutter-vertical, 2);
 
       @include respond(min-tab-port) {
         margin-bottom: $gutter-vertical;
@@ -65,5 +65,6 @@
 
   @include respond(touch-phone-only) {
     width: 100% !important;
+    margin-top: $basesize * 3;
   }
 }
