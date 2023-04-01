@@ -1,12 +1,21 @@
-@import "../components/heading.scss";
-@import "../components/hello-world-button.scss";
+@import '../base/base';
+@import '../base/animations';
+@import '../base/typography';
+@import '../base/utilities';
 
+@import "../layout/footer/footer.scss";
+@import "../layout/grid/grid";
+@import "../layout/header/header.scss";
+@import "../layout/main/main.scss";
+@import "../layout/navigation/navigation.scss";
+@import "../layout/section/section.scss";
 
-html {
-  background-color: ivory;
-}
-
-img {
-  width: 300px;
-  height: 100%;
-}
+@import "../components/bg-video/bg-video.scss";
+@import "../components/booking/booking.scss";
+@import "../components/button/button.scss";
+@import "../components/card/card.scss";
+@import "../components/composition/composition.scss";
+@import "../components/feature-box/feature-box.scss";
+@import "../components/form/form.scss";
+@import "../components/popup/popup.scss";
+@import "../components/story/story.scss";

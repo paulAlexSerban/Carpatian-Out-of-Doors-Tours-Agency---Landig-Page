@@ -15,10 +15,6 @@ module.exports = {
 			path.join(constants.SRC_DIR, "frontend", "js", "pages", "index.js"),
 			path.join(constants.SRC_DIR, "frontend", "scss", "pages", "index.scss"),
 		],
-		about: [
-			path.join(constants.SRC_DIR, "frontend", "js", "pages", "about.js"),
-			path.join(constants.SRC_DIR, "frontend", "scss", "pages", "about.scss"),
-		],
 	},
 	output: {
 		filename: "scripts/[name].js",
@@ -81,19 +77,13 @@ module.exports = {
 		new webpack.ProgressPlugin(),
 		// copy assets directory from one directory to another
 		new CopyWebpackPlugin({
-			patterns: [{ from: path.join(constants.SRC_DIR, "assets"), to: "assets/images" }],
+			patterns: [{ from: path.join(constants.SRC_DIR, "public"), to: "public" }],
 		}),
 		// generate HTML file using *.hbs files as source
 		new HtmlWebpackPlugin({
 			title: "Landing Page",
 			template: path.join(constants.SRC_DIR, "pages", "index.hbs"),
 			filename: path.join(constants.DIST_DIR, "index.html"),
-			inject: false,
-		}),
-		new HtmlWebpackPlugin({
-			title: "About Page",
-			template: path.join(constants.SRC_DIR, "pages", "about", "index.hbs"),
-			filename: path.join(constants.DIST_DIR, "about", "index.html"),
 			inject: false,
 		}),
 	],

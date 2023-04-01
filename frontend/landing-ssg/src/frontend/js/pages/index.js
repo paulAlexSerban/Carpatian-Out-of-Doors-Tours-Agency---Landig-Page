@@ -1,8 +1,11 @@
-import HelloWorldButton from "../components/hello-world-button/hello-world-button.js";
-import Heading from "../components/heading/heading.js";
-
-const heading = new Heading();
-heading.render();
-
-const helloWorldButton = new HelloWorldButton();
-helloWorldButton.render();
+// JS LAYOUT / STRUCTURE
+import headerStructure from '../layout/header/header';
+import sectionStructure from '../layout/section/section';
+import navigationStructure from '../layout/navigation/navigation';
+import cardComponent from '../components/card/card';
+import bookingComponent from '../components/booking/booking';
+new headerStructure;
+new sectionStructure;
+new cardComponent;
+new bookingComponent;
+new navigationStructure;
