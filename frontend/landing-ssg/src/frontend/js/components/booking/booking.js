@@ -6,6 +6,7 @@ const bookingComponent = () => {
     }
 
     init() {
+      // test
       // console.log('class booking - is loaded', this.element);
     }
   }
