@@ -1,6 +1,6 @@
 module.exports = {
   branches: "release",
-  repositoryUrl: "https://github.com/paulAlexSerban/prj--natours-tours-agency--landing-page",
+  repositoryUrl: "https://github.com/paulAlexSerban/prj--natours-tours-agency",
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
