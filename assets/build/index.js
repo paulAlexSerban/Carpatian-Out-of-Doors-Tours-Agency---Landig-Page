@@ -14,6 +14,6 @@ import { createImageRenditions } from "./tasks/createImageRenditions";
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 task(
-  "process",
+  "build",
   series(clean, parallel( processIcons, processFonts, processVideos, processSvgs, createImageRenditions))
 );
