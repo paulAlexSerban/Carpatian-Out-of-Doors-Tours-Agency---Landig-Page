@@ -13,4 +13,5 @@ if [ -d ../public ]; then
 fi
 
 cp -rfv ../../../assets/dist/* ../src/public
+export PUBLIC_PATH="/"
 npm --prefix .. run watch

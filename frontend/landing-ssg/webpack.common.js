@@ -8,6 +8,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const constants = require("./paths");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
+console.log(process.env.PUBLIC_PATH)
+
 // export webpack configuration
 module.exports = {
 	entry: {
@@ -19,7 +21,7 @@ module.exports = {
 	output: {
 		filename: "scripts/[name].js",
 		path: constants.DIST_DIR,
-		publicPath: "/",
+		publicPath: process.env.PUBLIC_PATH || "/",
 		clean: true,
 	},
 	module: {
