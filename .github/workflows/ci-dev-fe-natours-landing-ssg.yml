@@ -20,7 +20,7 @@ jobs:
     env:
       ASSETS_ROOT: assets
       FE_LANDING_PROJECT_ROOT: frontend/landing-ssg
-      NODE_VERSION: 14.20.1
+      NODE_VERSION: 16.19.0
       SITE_URL: https://paulalexserban.github.io/prj--natours-tours-agency
     steps:
       - name: "📥  Checkout repository"
@@ -55,18 +55,19 @@ jobs:
       - name: "📦  Install Frontend Landing Website dependencies"
         if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
-          bash scripts/modulize.bash -e prod -p install -m assets
-          bash scripts/modulize.bash -e prod -p install -m landing-ssg
+          bash modulize.bash -e prod -p install -m assets
+          bash modulize.bash -e prod -p install -m landing-ssg
 
       - name: "🏗️  Build Frontend Landing Website For GitHub Pages"
         if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
-          bash scripts/modulize.bash -e gh_pages -p build
+          bash modulize.bash -e gh_pages -p process -m assets
+          bash modulize.bash -e gh_pages -p build -m landing-ssg
 
       - name: "🚚  Package Frontend Landing Website"
         if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
-          bash scripts/modulize.bash -e prod -p package -m landing-ssg
+          bash modulize.bash -e prod -p package -m landing-ssg
 
       - name: "Configure git"
         run: |
