@@ -83,7 +83,7 @@ module.exports = {
 		}),
 		// generate HTML file using *.hbs files as source
 		new HtmlWebpackPlugin({
-			title: "Landing Page",
+			title: "Natours - Exciting tours for adventurous people",
 			template: path.join(constants.SRC_DIR, "pages", "index.hbs"),
 			filename: path.join(constants.DIST_DIR, "index.html"),
 			inject: false,
