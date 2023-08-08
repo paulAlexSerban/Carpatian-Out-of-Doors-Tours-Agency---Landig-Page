@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/paulAlexSerban/prj--natours-tours-agency/compare/v1.1.0...v1.2.0) (2023-08-08)
+
+
+### Bug Fixes
+
+* issue ([3fe3091](https://github.com/paulAlexSerban/prj--natours-tours-agency/commit/3fe30913080c483408e2fdd4679d77c00dfdfd20))
+
+
+### Features
+
+* **s3:** added manual deploy to s3 docs ([9284cb5](https://github.com/paulAlexSerban/prj--natours-tours-agency/commit/9284cb5f1f652eb7b1945bb2cfa683fb1c5436af))
+* **update:** added latest modulize structure-implemented dockr compose-upgraded the assets buil ([764c654](https://github.com/paulAlexSerban/prj--natours-tours-agency/commit/764c6543fa74b21c6d0a7922899a432afc42f29b))
+
 # [1.1.0](https://github.com/paulAlexSerban/prj--natours-tours-agency/compare/v1.0.0...v1.1.0) (2023-04-02)
 
 
